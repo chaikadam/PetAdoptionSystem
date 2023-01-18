@@ -1,0 +1,67 @@
+<div class="mainCard">
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Welcome!!! {{username}}</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p> User Dashboard</p>
+
+            <li>
+                <a [routerLink] = "['']" style="cursor: pointer;">  Home Page</a>
+            </li>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">  Profile</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li> 
+                        <a  (click)="setComponentToshow('showMyProfile')" style="cursor: pointer;">    Show Profile</a>
+                    </li>
+                    <li>
+                        <a   (click)="setComponentToshow('questionForm')" style="cursor: pointer;">    Edit Profile</a>
+                    </li>
+                   
+                </ul>
+            </li>
+
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pets</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a  (click)="setComponentToshow('addPetForm')" style="cursor: pointer;">    Add Pet</a>
+                    </li>
+                    <li>
+                        <a  (click)="setComponentToshow('showMyPets')" style="cursor: pointer;">    Show My Pets</a>
+                    </li>
+                                        
+                </ul>
+            </li>
+            <li>
+                <a (click)="setComponentToshow('showWishList')" style="cursor: pointer;">  Wish-List</a>
+            </li>
+            <li>
+                <a (click)="setComponentToshow('showMycomplaints')" style="cursor: pointer;">  Complaints</a>
+            </li>
+        </ul>
+
+        <ul class="list-unstyled CTAs">
+            <li>
+                <a (click)="logout()" style="cursor: pointer;" class="download">Logout</a> 
+            </li>
+            <!-- <li>
+                <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+            </li> -->
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+       
+        <ng-container *ngComponentOutlet = "showComponent"></ng-container>
+ 
+  
+    </div>
+</div> 
+</div>

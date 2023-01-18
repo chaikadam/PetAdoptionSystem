@@ -1,0 +1,76 @@
+.imageHolder{
+    background-image: url("https://source.unsplash.com/1600x900/?pet,adoption,shelter,stray animals");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* background-color: rgba(0,0,0,0.8); */
+    height:100vh;
+
+
+    margin:0px;
+    padding:0px;
+}
+
+
+.card{
+    width:400px;
+    height: 480px;
+
+    /* margin-right: 400px; */
+        
+    padding-top: 25px;
+
+    margin-top: 30px;
+    margin-left: 125px;
+
+    /* background-color:rgba(193, 202, 151, 0.76) ; */
+    background-color: rgba(245, 245, 245, 0.7);
+}
+
+.text-center{
+    color:rgb(59, 58, 58);
+}
+
+ .mycontainer{
+    
+    padding-top: 155px;
+    margin-left: 450px;
+   
+} 
+
+
+.form-group {
+    
+    width:370px;
+    
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.form-check{
+    margin-left: 20px;
+    padding-bottom: 10px;
+   
+}
+
+.btn {
+    width: 100px;
+}
+
+.button-container{
+
+    /* margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 100px;
+
+    width: 100px; */
+
+    padding-left: 150px;
+    
+}
+
+.spinner-border{
+
+    margin-left: 185px;
+}
